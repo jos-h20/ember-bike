@@ -1,1 +1,8 @@
-{{yield}}
+<div class="productDetail">
+  <h1>{{product.title}}</h1>
+  <img src="{{product.image}}">
+  <p>{{product.description}}</p>
+  ${{product.cost}}
+  <p><button {{action 'addToCart' product}}>Add to Cart</button></p>
+</div>
+{{display-cart}}
