@@ -1,15 +1,9 @@
-<h2>Buy some stuff</h2>
+<h2>For All Your Biking Needs</h2>
 
-<div class="row">
-  <div class="col-xs-12 col-md-8">
+<div class="row store">
+  <div class="col-xs-12 col-md-12">
     {{#each model as |product|}}
       {{product-tile product=product}}
     {{/each}}
   </div>
-  <div class="col-xs-6 col-md-4">
-    <h1>Shopping Cart</h1>
-      {{display-cart}}
-
-  </div>
-
 </div>

@@ -1,3 +1,9 @@
 .navbar {
   background-color: darkgray;
+  opacity: 0.4;
+  box-shadow: 2px 2px 3px black;
+  a {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+  }
 }

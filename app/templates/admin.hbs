@@ -1,4 +1,11 @@
-{{#each model as |product|}}
-  {{admin-tile product=product update="update" destroyProduct="destroyProduct"}}
-{{/each}}
-{{new-product  addProduct="addProduct"}}
+<div class="row">
+  <div class="col-md-10">
+    <h1>Current Items for Sale in the Store</h1>
+    {{#each model as |product|}}
+      {{admin-tile product=product update="update" destroyProduct="destroyProduct"}}
+    {{/each}}
+  </div>
+  <div class="col-md-2">
+    {{new-product  addProduct="addProduct"}}
+  </div>
+</div>

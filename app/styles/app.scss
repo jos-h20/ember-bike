@@ -1,4 +1,7 @@
-// Global Imports //
+// @import 'materialize';
+@import 'ember-cli-materialize';
+// @import 'bourbon/bourbon';
+// @import 'neat/neat';
 
 @import "base/index";
 @import "components/index";

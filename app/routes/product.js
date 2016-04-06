@@ -12,7 +12,6 @@ export default Ember.Route.extend({
       newFeedback.save().then(function() {
         return product.save();
       });
-      console.log(params.product);
       this.transitionTo('product', params.product);
 
     },

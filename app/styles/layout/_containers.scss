@@ -1,13 +1,38 @@
-.productTile {
-  border: 1px solid black;
-  width: 400px;
-  padding: 1%;
-  margin-top: 2%;
+.store {
+  .productTile {
+    border: 1px solid black;
+    width: 400px;
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+    float: right;
+    img {
+      width: 40%;
+      height: auto;
+    }
+  }
+}
+.productDetail {
   text-align: center;
   img {
     height: 25vh;
   }
 }
-.productDetail {
+.adminTile {
+  position: relative;
   text-align: center;
+  border: 1px double black;
+  width: 250px;
+  height: 25%;
+  float: left;
+  margin: 1%;
+  padding: 2%;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 1em;
+  .deleteButton {
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+  }
 }
