@@ -1,0 +1,18 @@
+{
+  "products" : [ {
+    "cost" : 20,
+    "description" : "A shirt made of cotton",
+    "image" : "http://www.customink.com/assets/site_content/products/530x542/unisex/orange-cb68a219e2b35bad123a229afac8c110.jpg",
+    "title" : "Shirt"
+  }, {
+    "cost" : 30,
+    "description" : "A blue dress",
+    "image" : "http://gloimg.rosegal.com/rosegal/2015/201508/grid-img/1439322586747-P-2944653.jpg",
+    "title" : "Dress"
+  }, {
+    "cost" : 10,
+    "description" : "Black pants",
+    "image" : "http://www.express.com/cdn/responsive/visualnav/w-pants/columnist/womens-columnist-ankle-pant.jpg",
+    "title" : "Pants"
+  } ]
+}
