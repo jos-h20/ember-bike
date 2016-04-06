@@ -2,5 +2,6 @@
   <h4>{{product.title}}</h4>
   <p>{{product.description}}</p>
   ${{product.cost}}
-
+{{update-product product=product update="update"}}
+<button class="btn" {{action 'delete' product}}>Delete</button>
 </div>
