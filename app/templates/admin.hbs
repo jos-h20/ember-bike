@@ -1,1 +1,4 @@
-{{outlet}}
+{{#each model as |product|}}
+  {{admin-tile product=product}}
+{{/each}}
+{{new-product  addProduct="addProduct"}}
