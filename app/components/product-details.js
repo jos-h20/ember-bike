@@ -7,5 +7,8 @@ export default Ember.Component.extend({
     addToCart(item) {
       this.get('shoppingCart').add(item);
     },
+    deleteFeedback(feedback) {
+        this.sendAction('deleteFeedback', feedback);
+    },
   }
 });
