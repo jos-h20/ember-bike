@@ -14,15 +14,15 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="/">B?ke</a>
+       <span class="navbar-brand">{{#link-to 'index'}}B?ke{{/link-to}}</span>
      </div>
      <div class="navbar-collapse collapse">
        <ul class="nav navbar-nav navbar-right">
 
            <li class="active">{{#link-to 'store'}}Store{{/link-to}}</li>
-           <li><a href="/contact">Contact</a></li>
-           <li><a href="/admin">Admin</a></li>
-           <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+           <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
+           <li>{{#link-to 'checkout'}}Contact{{/link-to}}</li>
+           <li>{{#link-to 'checkout'}}<span class="glyphicon glyphicon-shopping-cart"></span>{{/link-to}}</li>
 
        </ul>
      </div><!--/.nav-collapse -->
