@@ -1,22 +1,35 @@
 
 {{#if newProductForm}}
-<h2> Add a new product </h2>
+<div class="newAdminProduct">
+  <h2> Add a new product: </h2>
   <form>
     <div class='form-group'>
       <label for='title'>Title:</label>
       {{input value=title id='title'}}
+    </div>
+    <div class='form-group'>
       <label for='description'>Description:</label>
       {{textarea value=description id='description'}}
+    </div>
+    <div class='form-group'>
       <label for='cost'>Cost:</label>
       {{input value=cost id='cost'}}
+    </div>
+    <div class='form-group'>
+      <label for="rating">Rate 1-5:</label>
+      {{input type=number value=rating id="rating"}}
+    </div>
+    <div class='form-group'>
       <label for='image'>Image URL:</label>
       {{input value=image id='image'}}
     </div>
-    <button class="btn" {{action 'addProduct'}}>Save</button>
+    <button class="btn" {{action 'addProduct'}}>Add</button>
   </form>
-{{else}}
+</div>
+  {{else}}
 
   <button class="btn newProduct" {{action 'newProductFormShow'}}>Add new product</button>
+
 
 
 {{/if}}

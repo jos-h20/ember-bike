@@ -1,8 +1,11 @@
 .newProduct {
   border: 11px double black;
   padding: 40px;
+  width: 300px;
+  margin-top: 50px;
+  float: left;
   border-radius: 20em;
   &:hover {
-    
+
   }
 }

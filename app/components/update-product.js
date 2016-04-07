@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
         image: this.get('image'),
         cost: parseInt(this.get('cost')),
+        rating: parseInt(this.get('rating')),
       };
       this.set('updateProduct', false);
       this.sendAction('update', product, params);

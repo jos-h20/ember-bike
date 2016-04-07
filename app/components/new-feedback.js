@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         eval: this.get('eval'),
-        rating: parseInt(this.get('rating')),
+        
         product: this.get('product')
       };
       this.set('addNewFeedback', false);

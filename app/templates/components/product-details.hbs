@@ -4,11 +4,17 @@
   <p>{{product.description}}</p>
   ${{product.cost}}
   <p><button {{action 'addToCart' product}}>Add to Cart</button></p>
-  <div class="feedback">
+  <p>
+    {{#link-to 'store'}}<button>Keep Shopping</button>{{/link-to}}
+  </p>
+  <p>
+    {{#link-to 'checkout'}}<button>Check Out</button>{{/link-to}}
+  </p>
+  <div class="feedBack">
+    <h4>Current user reviews:</h4>
     {{#each product.feedbacks as |feedback|}}
     {{feedback-tile feedback=feedback deleteFeedback="deleteFeedback"}}
     {{/each}}
 
   </div>
 </div>
-{{display-cart}}
