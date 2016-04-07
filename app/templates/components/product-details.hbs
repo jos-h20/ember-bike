@@ -4,8 +4,11 @@
   <p>{{product.description}}</p>
   ${{product.cost}}
   <p><button {{action 'addToCart' product}}>Add to Cart</button></p>
-  {{#each product.feedbacks as |feedback|}}
+  <div class="feedback">
+    {{#each product.feedbacks as |feedback|}}
     {{feedback-tile feedback=feedback deleteFeedback="deleteFeedback"}}
-  {{/each}}
+    {{/each}}
+
+  </div>
 </div>
 {{display-cart}}

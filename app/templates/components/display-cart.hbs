@@ -1,9 +1,9 @@
 {{#each shoppingCart.items as |item|}}
-  <p>Product: {{item.title}}<br>
-  Cost: ${{item.cost}}</p>
+  <h5>Product: {{item.title}}</h5>
+  <h5>Cost: ${{item.cost}}.00</h5>
   <button {{action 'remove' item}}>Remove</button>
 {{/each}}
 
 
-<h4>Total Cost: ${{totalCost}}.00</h4>
+<h4>Cart Total: ${{totalCost}}.00</h4>
 <!-- <button {{action 'empty' []}}>Empty</button> -->

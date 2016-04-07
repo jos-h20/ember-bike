@@ -1,6 +1,7 @@
 .store {
   .productTile {
     border: 1px solid black;
+    border-radius: 10px;
     width: 400px;
     padding: 1%;
     margin: 2%;
@@ -14,9 +15,15 @@
 }
 .productDetail {
   text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
   img {
     height: 25vh;
   }
+}
+.feedback {
+  text-align: left;
+  background-color: lightgray;
 }
 .adminTile {
   position: relative;
@@ -35,4 +42,11 @@
     top: 8px;
     right: 9px;
   }
+}
+.checkout-cart {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 400px;
+  padding: 1%;
+  margin: 2%;
 }
