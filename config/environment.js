@@ -42,7 +42,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/ember-bike/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
